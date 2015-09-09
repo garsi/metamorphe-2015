@@ -1,0 +1,229 @@
+/* ==========================================================================
+   Kat's styles
+   ========================================================================== */
+
+/* IMPORT START: LESS */
+@import url('variables.less');
+@import url('mixins.less');
+@import url('typography.less');
+@import url('responsive-background.less');
+@import url('forms.less');
+
+html, body {
+    height:96%;
+}
+
+/* nav */
+
+header {
+	padding: 5% 0 0;
+	.logo {
+		width: 350px;
+		margin: auto;
+	}
+	img {
+		margin-left: 2%;
+		vertical-align: middle;
+	}
+	#logo-metamorphe {
+		width: 15%;
+	}
+	#type-metamorphe {
+		width: 80%;
+	}
+	
+	p {
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+.navbar {
+	margin-bottom: 1px;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, .25);
+}
+
+.navbar-default {
+    background-color: @white;
+    border: none;
+}    
+
+.navbar-default .nav-justified>li>a:focus, .navbar-default .nav-justified>li>a:hover {
+	background: linear-gradient(150deg, @teal, @purple);
+	//background-color: @purple;
+	color: @white;
+}
+
+.navbar-default .nav-justified>.active>a, .navbar-default .nav-justified>.active>a:focus, .navbar-default .nav-justified>.active>a:hover {
+    background: none;
+    background-color: @white;
+    color: @purple; 
+}
+
+
+.navbar-default .navbar-toggle {
+	width: 100%;
+    margin: auto;
+    border: none;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: @white;
+	color: @teal;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: @grey;
+    margin-top: 12px;
+}
+
+/* main */
+
+.hero {
+	width: 100%;
+}
+
+.hero-hp {
+	margin-top: 0;
+	padding: 30% 10% 0;
+}
+
+section {
+	margin-top: 50px;
+	padding: 0 5%;
+	img {
+		display: block;
+		margin: 30px auto 0;
+		width: 300px;
+	}
+}
+
+.us-hp {
+	img {
+		width: 100%;
+		max-width: 200px;
+	}
+}
+
+.portfolio-hp {
+	margin-top: 75px;
+	padding-bottom: 100px;
+	background: @black;
+	h1 {
+		color: @white;
+		padding-top: 50px;
+	}
+	img {
+		height: 300px;
+		width: 300px;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, .9);
+	}
+	div {
+		position: absolute;
+		width: 300px;
+		bottom: 0;
+		left: 50%;
+		margin-left: -150px;
+		background: rgba(236, 240, 241, .5);
+	}
+	h5, p {
+		text-align: center;
+		margin: 0;
+	}
+	h5 {
+		padding-top: 15px;
+	}
+	p {
+		padding-bottom: 10px;
+	}
+	.caption {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+	margin-left: -150px;
+    width: 300px;
+    height: 300px; 
+    background: rgba(107, 73, 254, .8);
+    	p {
+    		color: @white;
+    		font-size: 2em;
+    		line-height: 300px;
+    	}
+	}
+}
+
+.products-hp, .goodies-hp {
+	text-align: center;
+	span {
+			font-size: .9em;
+			color: @purple;
+	}
+	img {
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, .25);
+	}
+	.fa {
+		margin-top: 25px;
+		margin-bottom: 10px;
+		color: @purple;
+		font-size: 8em;
+	}
+}
+
+.goodies-hp {
+	background: @grey;
+	padding-bottom: 50px;
+	h1 {
+		padding-top: 50px;
+	}
+	img {
+		height: 200px;
+		width: 200px;
+	}
+}
+
+.blog-hp {
+	.col-md-4 {
+	padding-left: 0;
+	padding-right: 0;
+	}
+}
+
+.blog-post-hp {
+	margin: 40px auto;
+	max-width: 500px;
+	text-align: center;
+	border: 1px solid @grey;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, .25);
+	img {
+		display: block;
+		margin: auto;
+		width: 100%;
+	}
+	h3, p {
+		padding: 0 8px;
+	}
+}
+
+footer {
+	margin-top: 50px;
+	background: linear-gradient(175deg, @teal, @purple);
+	.icon-group {
+		display: block;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+	.icon {
+		display: inline;
+		padding: 5px 10px;
+		margin: 0 5px;
+		border: 2.5px solid @white;
+		border-radius: 50px;
+		font-size: 3em;
+	}
+}
+
+/* IMPORT END | MEDIA QUERIES: LESS */
+@import url('mq-small.less');
+@import url('mq-medium.less');
+@import url('mq-large.less');

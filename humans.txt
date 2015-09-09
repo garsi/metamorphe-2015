@@ -1,0 +1,31 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+/* COMPANY */
+	Company: Metamorphe
+	Site: metamorphe.us
+	Location: Seattle, WA
+
+/* OUR TEAM */
+	Name: Kat Garsi
+	Title: Co-Founder & UI/UX Developer
+	Site: katgarsi.com
+	Twitter: @heygarsi
+	Instagram: katraphael
+
+	Name: Lenny Peters
+	Title: Co-Founder & UI/UX Developer
+	Site: lennypeters.com
+	Twitter: @loonz206
+
+/* TECHNOLOGY */
+
+    HTML5, CSS, LESS
+    jQuery, Modernizr,
+    Bootstrap,
+    Gulp 
+
+/* THIS SITE */
+	Metamorphe
+	Metamorphe.us
+	Launched: 2015
