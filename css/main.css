@@ -32,45 +32,62 @@ body {
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'nevis-Bold', Helvetica, arial, sans-serif;
   text-transform: uppercase;
-}
-h4 {
-  font-family: 'Arvo', Helvetica, arial, sans-serif;
 }
 h5 {
-  font-family: 'nevis-Bold', Helvetica, arial, sans-serif;
-  text-transform: uppercase;
-  color: #6b49fe;
+  font-family: 'Arvo', Helvetica, arial, sans-serif;
 }
 h1 {
   margin-bottom: 30px;
-  font-size: 2.5em;
+  font-size: 2.4em;
   text-align: center;
 }
+h2 {
+  font-size: 2.2em;
+}
 h3 {
-  font-size: 2.25em;
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.8em;
+  color: #6b49fe;
+}
+h5 {
+  font-size: 1.6em;
+  font-weight: 700;
 }
 p {
   margin-bottom: 20px;
   font-size: 1.5em;
   line-height: 1.75em;
 }
-a {
+a,
+a:active,
+a:visited {
   color: #00dbb1;
 }
 a:hover {
-  color: #00dbb1;
+  color: #00c29c;
+}
+.button-menu,
+.button-menu:active,
+.button-menu:visited {
+  color: #333333;
+}
+.button-menu:hover {
+  color: #8c8c8c;
 }
 .navbar-default .nav-justified > li > a {
   font-family: 'nevis-Bold', Helvetica, arial, sans-serif;
-  font-size: 1.4em;
+  font-size: 1.5em;
   color: #333333;
   text-align: center;
   text-transform: uppercase;
 }
-.hero h2 {
+.hero-text h2 {
   margin-top: 0;
   padding-top: 30px;
   color: #ffffff;
@@ -207,21 +224,21 @@ section input[type="submit"]:focus {
   color: #ffffff;
   outline: none;
 }
-.products-hp button,
-.goodies-hp button,
-.blog-hp button {
+.products button,
+.goodies button,
+.blog-preview button {
   border-color: #6b49fe;
   color: #6b49fe;
   margin-bottom: 50px;
 }
-.products-hp button:hover,
-.goodies-hp button:hover,
-.blog-hp button:hover {
+.products button:hover,
+.goodies button:hover,
+.blog-preview button:hover {
   background: linear-gradient(150deg, #00dbb1, #6b49fe);
 }
-.products-hp button:focus,
-.goodies-hp button:focus,
-.blog-hp button:focus {
+.products button:focus,
+.goodies button:focus,
+.blog-preview button:focus {
   background: #6b49fe;
 }
 html,
@@ -230,7 +247,7 @@ body {
 }
 /* nav */
 header {
-  padding: 5% 0 0;
+  padding: 20px 0 0 0;
 }
 header .logo {
   width: 350px;
@@ -246,13 +263,15 @@ header #logo-metamorphe {
 header #type-metamorphe {
   width: 80%;
 }
-header p {
-  text-align: center;
+header .button-menu {
   margin: 0 auto;
 }
+nav {
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid #333333;
+}
 .navbar {
-  margin-bottom: 1px;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0;
 }
 .navbar-default {
   background-color: #ffffff;
@@ -260,7 +279,8 @@ header p {
 }
 .navbar-default .nav-justified > li > a:focus,
 .navbar-default .nav-justified > li > a:hover {
-  background: linear-gradient(150deg, #00dbb1, #6b49fe);
+  background: linear-gradient(150deg, #6b49fe, #00dbb1);
+  background-color: #333333;
   color: #ffffff;
 }
 .navbar-default .nav-justified > .active > a,
@@ -269,6 +289,8 @@ header p {
   background: none;
   background-color: #ffffff;
   color: #6b49fe;
+  border-image: none;
+  border-image-slice: none;
 }
 .navbar-default .navbar-toggle {
   width: 100%;
@@ -288,58 +310,59 @@ header p {
 /* main */
 .hero {
   width: 100%;
+  margin: 0 auto;
 }
-.hero-hp {
-  margin-top: 0;
-  padding: 30% 10% 0;
+.hero-hp .hero-text {
+  padding: 20% 10% 0 0;
 }
 section {
-  margin-top: 50px;
+  margin-bottom: 25px;
   padding: 0 5%;
 }
-section img {
+article img,
+aside img {
   display: block;
-  margin: 30px auto 0;
-  width: 300px;
-}
-.us-hp img {
+  margin: auto;
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
 }
-.portfolio-hp {
-  margin-top: 75px;
-  padding-bottom: 100px;
+.gallery,
+.goodies {
+  padding: 25px 0px;
+}
+.gallery img,
+.goodies img,
+.shadow {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.gallery {
+  margin-top: 50px;
   background: #333333;
 }
-.portfolio-hp h1 {
+.gallery h1 {
   color: #ffffff;
-  padding-top: 50px;
 }
-.portfolio-hp img {
-  height: 300px;
-  width: 300px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.9);
+.gallery h4,
+.gallery p {
+  text-align: center;
+  margin: 0;
 }
-.portfolio-hp div {
+.gallery h4 {
+  color: #6b49fe;
+}
+.gallery .details {
   position: absolute;
   width: 300px;
   bottom: 0;
   left: 50%;
   margin-left: -150px;
-  background: rgba(236, 240, 241, 0.5);
+  padding: 10px;
+  background: #b3b3b3;
 }
-.portfolio-hp h5,
-.portfolio-hp p {
-  text-align: center;
-  margin: 0;
+.gallery-item {
+  margin-bottom: 50px;
 }
-.portfolio-hp h5 {
-  padding-top: 15px;
-}
-.portfolio-hp p {
-  padding-bottom: 10px;
-}
-.portfolio-hp .caption {
+.caption {
   display: none;
   position: absolute;
   bottom: 0;
@@ -349,64 +372,57 @@ section img {
   height: 300px;
   background: rgba(107, 73, 254, 0.8);
 }
-.portfolio-hp .caption p {
+.caption p {
   color: #ffffff;
   font-size: 2em;
   line-height: 300px;
 }
-.products-hp,
-.goodies-hp {
+.products .product-icon,
+.products h3,
+.products p {
   text-align: center;
 }
-.products-hp span,
-.goodies-hp span {
+.products span {
   font-size: .9em;
   color: #6b49fe;
 }
-.products-hp img,
-.goodies-hp img {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-}
-.products-hp .fa,
-.goodies-hp .fa {
+.products .fa {
   margin-top: 25px;
   margin-bottom: 10px;
   color: #6b49fe;
   font-size: 8em;
 }
-.goodies-hp {
+.goodies {
   background: #ecf0f1;
   padding-bottom: 50px;
 }
-.goodies-hp h1 {
-  padding-top: 50px;
-}
-.goodies-hp img {
+.goodies img {
   height: 200px;
   width: 200px;
 }
-.blog-hp .col-md-4 {
+.goodies h4 {
+  margin-top: 25px;
+}
+.blog-preview {
+  padding: 0 25px;
+}
+.blog-preview .col-sm-4 {
   padding-left: 0;
   padding-right: 0;
 }
-.blog-post-hp {
-  margin: 40px auto;
+.post-preview {
   max-width: 500px;
-  text-align: center;
+  margin: 0px auto 50px;
   border: 1px solid #ecf0f1;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
-.blog-post-hp img {
-  display: block;
-  margin: auto;
-  width: 100%;
+.post-preview img {
+  max-width: 500px;
 }
-.blog-post-hp h3,
-.blog-post-hp p {
-  padding: 0 8px;
+.post-preview h3,
+.post-preview p {
+  padding: 0 10px;
 }
 footer {
-  margin-top: 50px;
   background: linear-gradient(175deg, #00dbb1, #6b49fe);
 }
 footer .icon-group {
@@ -426,28 +442,26 @@ footer .icon {
 /*** SMALL DEVICES: LESS ***/
 /* Small devices (phones and tablets, 768px and up) */
 @media (min-width: 768px) {
-  h1 {
-    font-size: 3em;
+  body {
+    font-size: 105%;
   }
-  h3 {
-    font-size: 2.5em;
-  }
-  p {
-    font-size: 1.55em;
-    line-height: 1.85em;
+  .navbar-default .nav-justified > li > a {
+    font-size: 1.5em;
   }
   #navbar > ul {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .nav-justified > li {
-    width: 18%;
-  }
-  .nav > li > a {
-    padding: 10px;
-  }
-  .hero-hp {
+  .hero-hp .hero-text {
     padding: 25% 10% 0;
+  }
+  section {
+    margin-bottom: 50px;
+    padding: 0 10%;
+  }
+  .gallery,
+  .goodies {
+    padding: 40px 0px;
   }
   .signup .mc-field-group {
     width: 35%;
@@ -462,46 +476,72 @@ footer .icon {
     margin-top: 50px;
     width: 28%;
   }
-  .us-hp img {
-    margin-top: 120px;
+  .about img {
+    margin-top: 15px;
   }
-  .products-hp article {
+  .products article {
     margin-bottom: 75px;
   }
-  .products-hp .fa {
+  .products .fa {
     font-size: 10em;
   }
-  .goodie-hp-details {
-    text-align: left;
+  .goodies article {
+    margin-bottom: 5px;
   }
-  .blog-post-hp {
-    margin-bottom: 75px;
+  .goodies h4 {
+    margin-top: 0;
   }
-  .blog-hp button {
-    margin-top: 0px;
+  .goodies button,
+  .goodies input[type="submit"] {
+    margin-left: 0;
+  }
+  .blog-preview {
+    margin: 0 auto 75px;
+  }
+  .blog-preview .post-preview {
+    width: 30%;
+    margin: 1.5%;
+  }
+  .blog-preview button {
+    margin-top: 50px;
   }
 }
 /*** MEDIUM DEVICES: LESS ***/
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .products-hp article {
-    padding-left: 30px;
-    padding-right: 30px;
+  section {
+    margin-bottom: 60px;
+    padding: 0 10%;
   }
-  .blog-post-hp {
-    max-width: 300px;
+  .gallery,
+  .goodies {
+    padding: 50px 0px;
   }
-  .us-hp img {
-    max-width: 300px;
+  .products {
+    padding: 0 10px;
+  }
+  .products article {
+    padding: 0 20px;
+  }
+  .hold-blog {
+    max-width: 1200px;
+    margin: auto;
   }
 }
 /*** LARGE DEVICES: LESS ***/
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .goodie-hp-img {
-    padding-right: 0;
+  .products {
+    padding: 0 15px;
   }
-  .goodie-hp-details {
-    padding-left: 0;
+  .products article {
+    padding: 0 35px;
+  }
+  .blog-preview {
+    margin: 0 auto 100px;
+  }
+  .hold-blog {
+    max-width: 1400px;
+    margin: auto;
   }
 }

@@ -2,16 +2,12 @@
 
 /* Small devices (phones and tablets, 768px and up) */
 @media (min-width: 768px) { 
-	h1 {
-		font-size: 3em;
-	}
-	h3 {
-		font-size: 2.5em;
+	body {
+		font-size: 105%;
 	}
 
-	p {
-		font-size: 1.55em;
-		line-height: 1.85em;
+	.navbar-default .nav-justified>li>a {
+		font-size: 1.5em;
 	}
 
 	#navbar > ul {
@@ -19,16 +15,17 @@
 		margin-bottom: 10px;
 	}
 
-	.nav-justified>li {
-		width: 18%;
-	}
-
-	.nav>li>a {
-		padding: 10px;
-	}
-
-	.hero-hp {
+	.hero-hp .hero-text {
 		padding: 25% 10% 0;
+	}
+
+	section {
+		margin-bottom: 50px;
+		padding: 0 10%;
+	}
+
+	.gallery, .goodies {
+		padding: 40px 0px;
 	}
 
 	.signup {
@@ -46,13 +43,13 @@
 		}
 	}
 
-	.us-hp {
+	.about {
 		img {
-			margin-top: 120px;
+			margin-top: 15px;
 		}
 	}
 
-	.products-hp {
+	.products {
 		article {
 			margin-bottom: 75px;
 		}
@@ -61,17 +58,26 @@
 		}
 	}
 
-	.goodie-hp-details {
-		text-align: left;
+	.goodies {
+		article {
+			margin-bottom: 5px;
+		}
+		h4 {
+			margin-top: 0;
+		}
+		button, input[type="submit"] {
+			margin-left: 0;
+		}
 	}
 
-	.blog-post-hp {
-		margin-bottom: 75px;
-	}
-
-	.blog-hp {
+	.blog-preview {
+		margin: 0 auto 75px;
+		.post-preview {
+			width: 30%;
+			margin: 1.5%;
+		}
 		button {
-			margin-top: 0px;
+			margin-top: 50px;
 		}
 	}
     

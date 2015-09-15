@@ -1,0 +1,20 @@
+input[type="submit"] {
+    margin-top: 15px;
+    width: 292px;
+    height: 45px;
+    padding: 8px;
+    //letter-spacing: .8px;
+    //border: 3px solid @purple;
+    background-color: @grey;
+    border: solid 4px transparent;  
+    transition: 800ms ease all;
+    outline: none;
+    border-image: linear-gradient(45deg, @teal, @purple);
+    border-image-slice: 1;
+}
+
+input[type="submit"]:hover {
+    border: none;
+    border: 3px solid @purple;
+    background-color: @purple;
+}

@@ -16,7 +16,7 @@ html, body {
 /* nav */
 
 header {
-	padding: 5% 0 0;
+	padding: 20px 0 0 0;
 	.logo {
 		width: 350px;
 		margin: auto;
@@ -31,35 +31,38 @@ header {
 	#type-metamorphe {
 		width: 80%;
 	}
-	
-	p {
-		text-align: center;
+	.button-menu {
 		margin: 0 auto;
 	}
 }
 
+nav {
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, .25);
+	border-bottom: 1px solid @black;
+}
+
 .navbar {
-	margin-bottom: 1px;
-	box-shadow: 0px 3px 5px rgba(0, 0, 0, .25);
+	margin-bottom: 0;
 }
 
 .navbar-default {
     background-color: @white;
     border: none;
-}    
+}
 
 .navbar-default .nav-justified>li>a:focus, .navbar-default .nav-justified>li>a:hover {
-	background: linear-gradient(150deg, @teal, @purple);
-	//background-color: @purple;
+	background: linear-gradient(150deg, @purple, @teal);
+	background-color: @black;
 	color: @white;
 }
 
 .navbar-default .nav-justified>.active>a, .navbar-default .nav-justified>.active>a:focus, .navbar-default .nav-justified>.active>a:hover {
     background: none;
     background-color: @white;
-    color: @purple; 
+    color: @purple;
+    border-image: none;
+    border-image-slice: none;
 }
-
 
 .navbar-default .navbar-toggle {
 	width: 100%;
@@ -81,62 +84,64 @@ header {
 
 .hero {
 	width: 100%;
+	margin: 0 auto;
 }
 
-.hero-hp {
-	margin-top: 0;
-	padding: 30% 10% 0;
+.hero-hp .hero-text {
+	padding: 20% 10% 0 0;
 }
 
 section {
-	margin-top: 50px;
+	margin-bottom: 25px;
 	padding: 0 5%;
+}
+
+article, aside {
 	img {
 		display: block;
-		margin: 30px auto 0;
-		width: 300px;
-	}
-}
-
-.us-hp {
-	img {
+		margin: auto;
 		width: 100%;
-		max-width: 200px;
+		max-width: 300px;
 	}
 }
 
-.portfolio-hp {
-	margin-top: 75px;
-	padding-bottom: 100px;
+.gallery, .goodies {
+	padding: 25px 0px;
+}
+
+.gallery img, .goodies img, .shadow {
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.gallery {
+	margin-top: 50px;
 	background: @black;
 	h1 {
 		color: @white;
-		padding-top: 50px;
 	}
-	img {
-		height: 300px;
-		width: 300px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, .9);
+	h4, p {
+		text-align: center;
+		margin: 0;
 	}
-	div {
+	h4 {
+		color: @purple;
+	}
+	.details {
 		position: absolute;
 		width: 300px;
 		bottom: 0;
 		left: 50%;
 		margin-left: -150px;
-		background: rgba(236, 240, 241, .5);
+		padding: 10px;
+		background: lighten(@black, 50%);
 	}
-	h5, p {
-		text-align: center;
-		margin: 0;
-	}
-	h5 {
-		padding-top: 15px;
-	}
-	p {
-		padding-bottom: 10px;
-	}
-	.caption {
+}
+
+.gallery-item {
+	margin-bottom: 50px;
+}
+
+.caption {
     display: none;
     position: absolute;
     bottom: 0;
@@ -145,22 +150,20 @@ section {
     width: 300px;
     height: 300px; 
     background: rgba(107, 73, 254, .8);
-    	p {
-    		color: @white;
-    		font-size: 2em;
-    		line-height: 300px;
-    	}
+	p {
+		color: @white;
+		font-size: 2em;
+		line-height: 300px;
 	}
 }
 
-.products-hp, .goodies-hp {
-	text-align: center;
-	span {
-			font-size: .9em;
-			color: @purple;
+.products {
+	.product-icon, h3, p {
+		text-align: center;
 	}
-	img {
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, .25);
+	span {
+		font-size: .9em;
+		color: @purple;
 	}
 	.fa {
 		margin-top: 25px;
@@ -170,43 +173,40 @@ section {
 	}
 }
 
-.goodies-hp {
+.goodies {
 	background: @grey;
 	padding-bottom: 50px;
-	h1 {
-		padding-top: 50px;
-	}
 	img {
 		height: 200px;
 		width: 200px;
 	}
-}
-
-.blog-hp {
-	.col-md-4 {
-	padding-left: 0;
-	padding-right: 0;
+	h4 {
+		margin-top: 25px;
 	}
 }
 
-.blog-post-hp {
-	margin: 40px auto;
+
+.blog-preview {
+	padding: 0 25px;
+	.col-sm-4 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.post-preview {
 	max-width: 500px;
-	text-align: center;
+	margin: 0px auto 50px;
 	border: 1px solid @grey;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, .25);
 	img {
-		display: block;
-		margin: auto;
-		width: 100%;
+		max-width: 500px;
 	}
 	h3, p {
-		padding: 0 8px;
+		padding: 0 10px;
 	}
 }
 
 footer {
-	margin-top: 50px;
 	background: linear-gradient(175deg, @teal, @purple);
 	.icon-group {
 		display: block;
