@@ -51,9 +51,9 @@ nav {
 }
 
 .navbar-default .nav-justified>li>a:focus, .navbar-default .nav-justified>li>a:hover {
-	background: linear-gradient(150deg, @purple, @teal);
-	background-color: @black;
-	color: @white;
+	background: transparent;
+	//background-color: @black;
+	color: lighten(@black, 35%)
 }
 
 .navbar-default .nav-justified>.active>a, .navbar-default .nav-justified>.active>a:focus, .navbar-default .nav-justified>.active>a:hover {
@@ -70,8 +70,8 @@ nav {
     border: none;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-	background-color: @white;
+button.navbar-toggle:hover, button.navbar-toggle:focus, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background: @white;
 	color: @teal;
 }
 
@@ -88,7 +88,7 @@ nav {
 }
 
 .hero-hp .hero-text {
-	padding: 20% 10% 0 0;
+	padding: 20% 10% 0 10%;
 }
 
 section {
@@ -105,7 +105,16 @@ article, aside {
 	}
 }
 
-.gallery, .goodies {
+.about {
+	img {
+		border-radius: 100%;
+	}
+	/*img:hover {
+		box-shadow: none;
+	}*/
+}
+
+.gallery {
 	padding: 25px 0px;
 }
 
@@ -124,7 +133,10 @@ article, aside {
 		margin: 0;
 	}
 	h4 {
-		color: @purple;
+		color: @white;
+	}
+	p {
+		color: @white;
 	}
 	.details {
 		position: absolute;
@@ -133,7 +145,7 @@ article, aside {
 		left: 50%;
 		margin-left: -150px;
 		padding: 10px;
-		background: lighten(@black, 50%);
+		background: rgba(0,0,0,.7);
 	}
 }
 
@@ -157,25 +169,10 @@ article, aside {
 	}
 }
 
-.products {
-	.product-icon, h3, p {
-		text-align: center;
-	}
-	span {
-		font-size: .9em;
-		color: @purple;
-	}
-	.fa {
-		margin-top: 25px;
-		margin-bottom: 10px;
-		color: @purple;
-		font-size: 8em;
-	}
-}
-
 .goodies {
 	background: @grey;
-	padding-bottom: 50px;
+	margin-bottom: 0;
+	padding: 25px 20px 50px;
 	img {
 		height: 200px;
 		width: 200px;
@@ -207,7 +204,7 @@ article, aside {
 }
 
 footer {
-	background: linear-gradient(175deg, @teal, @purple);
+	background: linear-gradient(180deg, @purple, @black);
 	.icon-group {
 		display: block;
 		margin-bottom: 25px;

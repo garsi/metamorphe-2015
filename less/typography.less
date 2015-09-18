@@ -56,6 +56,7 @@ a:hover {
 
 .button-menu, .button-menu:active, .button-menu:visited {
 	color: @black;
+	font-size: 1em;
 }
 
 .button-menu:hover {
@@ -68,24 +69,70 @@ a:hover {
 	color: @black;
 	text-align: center;
 	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+		-moz-transition: all 0.3s ease 0s;
+		-webkit-transition: all 0.3s ease 0s;
 }
 
 .hero-text h2 {
-	margin-top: 0;
-	padding-top: 30px;
+	margin-top: 25px;
+	//padding-top: 30px;
 	color: @white;
 	font-family: @font-body;
-	line-height: 1.2em;
+	font-size: 2.4em;
+	line-height: 1.4em;
+	text-align: center;
 	text-transform: none;
+}
+
+.products {
+	.product-icon, h2, h3, p {
+		text-align: center;
+	}
+	h2 {
+		margin-bottom: 5px;
+	}
+	h3 {
+		margin-top: 0;
+		margin-bottom: 5px;
+		font-family: @font-body;
+		font-size: 1.8em;
+		color: @purple; 
+	}
+	/*.fa {
+		margin-top: 25px;
+		margin-bottom: 10px;
+		color: @purple;
+		font-size: 8em;
+	}*/
+	.product-icon {
+		width: 125px;
+		height: 125px;
+		margin: 40px auto 5px;
+		background: @purple;
+		border-radius: 125px;
+	}
+	.product-icon {
+		width: 125px;
+		height: 125px;
+		padding: 15px;
+	}
+}
+
+.goodies a:hover,  .goodies a:active{
+	text-decoration: none;
 }
 
 footer {
 	padding: 50px 0;
-	p, a {
+	p, a, a:active, a:visited {
 		color: @white;
 		text-align: center;
 	}
 	a:hover {
-	color: @black;
+	color: @teal;
+	}
+	.icon:hover {
+		border-color: @teal;
 	}
 }
