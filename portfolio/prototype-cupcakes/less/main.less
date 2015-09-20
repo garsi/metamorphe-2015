@@ -1,0 +1,278 @@
+/* ==========================================================================
+   Kat's styles
+   ========================================================================== */
+
+/* IMPORT START: LESS */
+@import url('variables.less');
+@import url('mixins.less');
+@import url('typography.less');
+//@import url('responsive-background.less');
+@import url('forms.less');
+
+#facebook-test {
+  border: 1px solid @clouds;
+  max-width: 600px;
+}
+
+.field-test {
+  width: 200px;
+  height: 50px;
+  background: @white;
+  color: @charcoal;
+  margin: 10px auto;
+  line-height: 50px;
+  border-radius: 5px;
+}
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  box-shadow: @box-shadow;
+}
+
+button, input[type="submit"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo-hold {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 150px;
+  background: @sweetmint;
+  h1 {
+    padding-top: 20px;
+    font-size: 1.75em;
+    color: @charcoal;
+  }
+}
+
+header {
+  height: 115px;
+  padding-top: 5px;
+  background-image: url(../img/sprinkles-test_2.png);
+	background-repeat: repeat-x;
+}
+
+.navbar-default {
+    background-color: @sweetmintdark;
+    border: none;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.nav>li>a {
+	padding: 8px 0;
+  margin: 0 8%;
+  border: 3px solid @sweetmintdark;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: @sweetmint;
+  border: 3px solid @sweetmintdark;
+  border-radius: 4px;
+  color: @charcoal;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background: transparent;
+  color: @charcoal;
+  border-bottom: 3px solid @sweetmint;
+  border-top: 3px solid @sweetmint;
+  border-radius: 0;
+}
+
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* HAMBURGER */
+.navbar-default .navbar-toggle {
+  border: none;
+  width: 44px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: @sweetmint;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.navbar-default .navbar-toggle {
+  box-shadow: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: @clouds;
+  border: none;
+}
+
+.sprinkles {
+  width: 100%;
+  height: 50px;
+  background-image: url(../img/sprinkles-rule.png);
+  background-repeat: repeat-x;
+}
+
+.page-content {
+  padding: 0 15px 50px;
+}
+
+.page-highlight {
+  padding: 25px 15px 50px;
+}
+
+.page-highlight img, .page-content img {
+  display: block;
+  margin: auto;
+  max-width: 300px;
+}
+
+.page-highlight {
+  background: @sweetmint;
+  h2 {
+    text-align: center;
+  }
+  img {
+    margin-top: 25px;
+    max-width: 500px;
+  }
+}
+
+.page-action {
+  background: @heyblue;
+  padding: 10px 25px 75px;
+  img {
+    max-width: 300px;
+  }
+}
+
+.post-preview.col-sm-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.post-preview {
+  background: @white;
+  margin-top: 50px;
+  padding: 20px 20px 0;
+  box-shadow: @box-shadow;
+}
+
+.post-image {
+  img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    box-shadow: none;
+  }
+}
+
+.page-highlight.menu {
+  background: @white;
+}
+
+.page-content.map-section {
+  padding: 0 0 25px;
+}
+
+.map-article {
+  background-image: url(../img/map-test.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0px 0 35px;
+}
+
+.map-text {
+  position: relative;
+  top: 20px;
+  left: 40px;
+  width: 85%;
+  padding: 20px 10px;
+  background: rgba(255, 255, 255, 0.5)
+}
+
+.social {
+  margin-top: 25px;
+}
+
+.gallery {
+  div {
+  margin-bottom: 25px;
+  }
+}
+
+.menu {
+  img {
+    margin-top: 2px;
+  }
+}
+
+.featured {
+  h3 {
+    margin-top: 0;
+  }
+  h4 {
+    text-align: center;
+  }
+}
+
+.page-content.featured {
+  padding-bottom: 0px;
+}
+
+.deliver {
+  img {
+    box-shadow: none;
+    width: 200px;
+    margin: 25px auto;
+  }
+}
+
+.cupcake {
+  position: relative;
+}
+
+.caption {
+    display: none;
+    position: absolute;
+    top: 75px;
+    left: 1.67%;
+    height: 250px;
+    width: 30%;
+    //max-height: 300px;
+    background: rgba(255,215,213,.8);
+      p {
+        color: @charcoal;
+        font-size: 2em;
+        padding: 100px 25px;
+      }
+  }
+
+footer {
+  background-color: @sweetmint;
+  padding: 50px 0;
+  .icon-circle {
+    box-shadow: none;
+    width:50px;
+    margin: 0 10px 25px;
+  }
+}
+
+/* IMPORT END | MEDIA QUERIES: LESS */
+@import url('mq-small.less');
+@import url('mq-medium.less');
+@import url('mq-large.less');

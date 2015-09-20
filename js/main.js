@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-$('.gallery-item').hover(
+$('.gallery-hover').hover(
 	function(){
 		$(this).find('.details').fadeOut(250);
 		$(this).find('.caption').fadeIn(250);

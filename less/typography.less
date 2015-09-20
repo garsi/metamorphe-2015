@@ -46,12 +46,25 @@ p {
     line-height: 1.75em;
 }
 
+ul, li {
+	 font-size: 1.2em;
+}
+
 a, a:active, a:visited {
 	color: @teal;
 }
 
 a:hover {
 	color: darken(@teal, 5%);
+}
+
+hr {
+    display: block;
+    height: 1px;
+    margin: 25px 50px 40px;
+    padding: 0; 
+    border: 0;
+    border-top: 2px solid @purple; 
 }
 
 .button-menu, .button-menu:active, .button-menu:visited {
@@ -64,9 +77,9 @@ a:hover {
 }
 
 .navbar-default .nav-justified>li>a {
-	font-family: @font-header;
-	font-size: 1.5em;
 	color: @black;
+	font-family: @font-header;
+	font-size: 1.4;
 	text-align: center;
 	text-transform: uppercase;
 	transition: all 0.3s ease 0s;
@@ -85,18 +98,26 @@ a:hover {
 	text-transform: none;
 }
 
+.hero-sp {
+	h1 {
+		color: @white;
+	}
+}
+
 .products {
 	.product-icon, h2, h3, p {
 		text-align: center;
 	}
 	h2 {
 		margin-bottom: 5px;
+		font-family: @font-body;
+		font-size: 2em;
 	}
 	h3 {
 		margin-top: 0;
 		margin-bottom: 5px;
-		font-family: @font-body;
-		font-size: 1.8em;
+		//font-family: @font-body;
+		font-size: 2.2em;
 		color: @purple; 
 	}
 	/*.fa {
@@ -121,6 +142,16 @@ a:hover {
 
 .goodies a:hover,  .goodies a:active{
 	text-decoration: none;
+}
+
+.products-sp {
+	h1 {
+		font-size: 3em;
+		margin-bottom: 0;
+	}
+	h4 {
+		font-size: 2.4em;
+	}
 }
 
 footer {

@@ -1,0 +1,322 @@
+/* ==========================================================================
+   Kat's styles
+   ========================================================================== */
+
+/* IMPORT START: LESS */
+@import url('variables.less');
+@import url('mixins.less');
+@import url('typography.less');
+@import url('responsive-background.less');
+@import url('forms.less');
+
+html, body {
+    height:100%;
+}
+
+img {
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+
+section {
+	margin: 25px auto 15px;
+	h1 {
+		margin: 25px auto;
+		text-align: center;
+	}
+}
+
+article {
+	margin-top: 10px;
+	padding: 0 5%;
+}
+
+/*** NAV ***/
+.navbar-default {
+    background-color: @River;
+    border-color: @River;
+}
+
+.navbar-brand>img {
+	width: 30px;
+	height: 30px
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: transparent;
+	border-bottom: 2px solid @Himalaya;
+	border-radius: 0px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	background: @Himalaya;
+	border-bottom: 2px solid @White;
+	border-radius: 0px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: @Peace;
+}
+
+/* HAMBURGER */
+.navbar-default .navbar-toggle {
+	border: none;
+	width: 44px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: @NightSky;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: @GlacialLake;
+	border: none;
+}
+
+/*** HEADER IMAGE ***/
+.hero-hp {
+	width: 100%;
+	img {
+	    width: 75%;
+	    max-width: 300px;
+	    padding: 6em 0 4em;
+	    vertical-align: middle;
+	}
+}
+
+/*** MAIN ***/
+
+.circle {
+	display: block;
+	margin: 50px auto;
+	width: 50%;
+	max-width: 250px;
+}
+
+.calendar {
+	h2 {
+		margin-top: 0;
+	}
+	button, input[type="submit"] {
+		margin-top: 25px;
+	}
+}
+
+.highlight {
+	margin-bottom: 0;
+	padding: 25px 0 15px;
+	background: @Himalaya;
+	color: @White;
+	h1 {
+		color: @White;
+	}
+}
+
+.signup {
+	margin-top: 0;
+	background-color: @River;
+	p {
+		padding: 20px 0;
+		color: @White;
+	}
+}
+
+/* HOMEPAGE - BLOG */
+.articles {
+	padding: 0 5%;
+	.col-sm-6 {
+		padding: 0;
+	}
+	img {
+		width: 100%
+	}
+}
+
+.post-preview {
+	border: 1px solid @Peace;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .10);
+	margin-bottom: 35px;
+	div:nth-child(2) {
+		padding: 0 5%;
+	}
+}
+
+/* HOMEPAGE - INSTAGRAM */
+.instagram-full-width {
+	background: @Himalaya;
+	padding: 40px 0 80px;
+	h1 {
+		color: @White;
+	}
+	img {
+		width: 100%;
+		max-width: 1200px;
+		display: block;
+		margin: auto;
+	}
+}
+
+/* HOMEPAGE - SHOP */
+.shop {
+	margin-bottom: 100px;
+	div {
+		width: 80%;
+		margin: auto;
+		max-width: 300px;
+	}
+	img {
+		width: 100%;
+		display: block;
+		margin: 10px auto;
+	}
+	h2, h5 {
+		display: inline-block;
+		margin: 0;
+	}
+	h2 {
+		float: left;
+		width: 85%;
+	}
+	h5 {
+		float: right;
+		width: 10%;
+		padding-top: 5px;
+	}
+	p {
+		clear: both;
+	}
+}
+
+footer {
+	clear: both;
+	padding: 25px 0;
+	background-color: @River;
+	text-align: center;
+	.fa {
+		margin-bottom: 15px;
+		padding: 0 10px;
+	}
+}
+
+/*** SUBPAGES ***/
+
+.hero-sp {
+	width: 100%;
+}
+
+.title-sp {
+
+}
+
+/*** SP: ADVENUTRES ***/
+#adventures-page {
+	article {
+		margin-top: 50px;
+	}
+}
+
+/*** SP: WHO WE ARE ***/
+
+#about-page {
+	.circle {
+		margin: 0 auto 30px;
+	}
+	.about-details {
+		margin-bottom: 25px;
+	}
+	h2 {
+		text-align: center;
+		margin-top: -20px;
+		margin-bottom: 25px;
+	}
+	form {
+		margin-top: 25px;
+	}
+	button, input[type="submit"] {
+		margin-top: 15px;
+		margin-bottom: 100px;
+	}
+}
+
+/*** SP: MOUNTAIN TALK ***/
+
+.post-preview {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.sidebar-sp {
+	background: rgba(225, 229, 230, .5);
+	margin-bottom: 0;
+	padding: 25px 5%;
+}
+
+.categories {
+	color: @River;
+	ul {
+		padding-left: 0;
+	}
+	li {
+		list-style-type: none;
+	}
+}
+
+.latest {
+	margin-top: 50px;
+	img {
+		width: 80%;
+		max-width: 400px;
+		display: block;
+		margin: 25px auto 0;
+	}
+}
+
+.search-example {
+	height: 50px;
+	width: 100%;
+	margin: 10px auto;
+	background: white;
+	border: 1px solid @River;
+	p {
+		line-height: 50px;
+		padding-left: 10px;
+		color: @River;
+	}
+}
+.signup-sidebar {
+	width: 100%;
+	max-width: 400px;
+	margin: 50px auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background: @Himalaya;
+	p {
+		color: @Peace;
+	}
+	article {
+		background {
+			color: @Himalaya;
+		}
+	}
+}
+
+.social-plugins {
+	//padding-bottom: 50px;
+	aside {
+		margin: 50px auto 50px;
+	}
+	img {
+		width: 100%;
+		max-width: 300px;
+		display: block;
+		margin: auto;
+	}
+}
+
+
+
+/* IMPORT END | MEDIA QUERIES: LESS */
+@import url('mq-small.less');
+@import url('mq-medium.less');
+@import url('mq-large.less');

@@ -30,6 +30,11 @@ button:hover, input[type="submit"]:hover {
     color: @white;
 }
 
+.products > article > a:hover {
+	text-decoration: none;
+}
+
+
 button:focus, input[type="submit"]:focus, .typeform-button:focus {
 	background: @purple;
 }
@@ -37,6 +42,7 @@ button:focus, input[type="submit"]:focus, .typeform-button:focus {
 .typeform-button {
 	&:extend(button);
 	padding-top: 8px;
+	margin-top: 30px;
 }
 
 .typeform-button:hover {

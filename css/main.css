@@ -64,6 +64,10 @@ p {
   font-size: 1.5em;
   line-height: 1.75em;
 }
+ul,
+li {
+  font-size: 1.2em;
+}
 a,
 a:active,
 a:visited {
@@ -71,6 +75,14 @@ a:visited {
 }
 a:hover {
   color: #34b3a0;
+}
+hr {
+  display: block;
+  height: 1px;
+  margin: 25px 50px 40px;
+  padding: 0;
+  border: 0;
+  border-top: 2px solid #6b49fe;
 }
 .button-menu,
 .button-menu:active,
@@ -82,9 +94,9 @@ a:hover {
   color: #8c8c8c;
 }
 .navbar-default .nav-justified > li > a {
-  font-family: 'nevis-Bold', Helvetica, arial, sans-serif;
-  font-size: 1.5em;
   color: #333333;
+  font-family: 'nevis-Bold', Helvetica, arial, sans-serif;
+  font-size: 1.4;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
@@ -99,6 +111,9 @@ a:hover {
   line-height: 1.4em;
   text-align: center;
   text-transform: none;
+}
+.hero-sp h1 {
+  color: #ffffff;
 }
 .products {
   /*.fa {
@@ -116,12 +131,13 @@ a:hover {
 }
 .products h2 {
   margin-bottom: 5px;
+  font-family: 'Arvo', Helvetica, arial, sans-serif;
+  font-size: 2em;
 }
 .products h3 {
   margin-top: 0;
   margin-bottom: 5px;
-  font-family: 'Arvo', Helvetica, arial, sans-serif;
-  font-size: 1.8em;
+  font-size: 2.2em;
   color: #6b49fe;
 }
 .products .product-icon {
@@ -139,6 +155,13 @@ a:hover {
 .goodies a:hover,
 .goodies a:active {
   text-decoration: none;
+}
+.products-sp h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+.products-sp h4 {
+  font-size: 2.4em;
 }
 footer {
   padding: 50px 0;
@@ -253,6 +276,9 @@ input[type="submit"]:hover,
   border: none;
   color: #ffffff;
 }
+.products > article > a:hover {
+  text-decoration: none;
+}
 button:focus,
 input[type="submit"]:focus,
 .typeform-button:focus,
@@ -261,6 +287,7 @@ input[type="submit"]:focus,
 }
 .typeform-button {
   padding-top: 8px;
+  margin-top: 30px;
 }
 .typeform-button:hover {
   text-decoration: none;
@@ -399,6 +426,11 @@ aside img {
 .shadow {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.gallery-hover {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
 .gallery {
   margin-top: 50px;
   background: #333333;
@@ -491,6 +523,41 @@ footer .icon {
   border-radius: 50px;
   font-size: 3em;
 }
+/* SUBPAGE SPECIFIC */
+.hero-sp {
+  background: #6b49fe;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 25px;
+}
+.hero-products {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background: none;
+}
+.hero-products img {
+  width: 100%;
+}
+.main-sp section.signup {
+  padding-top: 50px;
+  margin-bottom: 0;
+}
+.intro {
+  margin-bottom: 50px;
+}
+.intro h4 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.style-tile {
+  margin: 15px 5px 100px;
+}
+.style-tile aside {
+  margin-bottom: 40px;
+}
 /* IMPORT END | MEDIA QUERIES: LESS */
 /*** SMALL DEVICES: LESS ***/
 /* Small devices (phones and tablets, 768px and up) */
@@ -498,8 +565,14 @@ footer .icon {
   body {
     font-size: 105%;
   }
+  .sm-hide {
+    display: none;
+  }
+  hr {
+    margin: 50px 70px 60px;
+  }
   .navbar-default .nav-justified > li > a {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   #navbar > ul {
     width: 90%;
@@ -562,12 +635,36 @@ footer .icon {
   .blog-preview button {
     margin-top: 50px;
   }
+  /* SUBPAGE SPECIFIC */
+  .hero-sp {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 13%;
+    padding-right: 13%;
+    margin-bottom: 50px;
+  }
+  .hero-products {
+    padding: 0;
+  }
+  .intro {
+    margin-bottom: 75px;
+  }
+  .intro h4 {
+    margin-bottom: 50px;
+  }
+  .style-tile aside {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 /*** MEDIUM DEVICES: LESS ***/
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #navbar > ul {
     width: 75%;
+  }
+  .navbar-default .nav-justified > li > a {
+    font-size: 1.1em;
   }
   section {
     margin-bottom: 60px;
@@ -593,6 +690,15 @@ footer .icon {
     width: 150px;
     height: 150px;
     margin: 15px auto 5px;
+  }
+  /* SUBPAGE SPECIFIC */
+  .hero-sp {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 60px;
+  }
+  .hero-products {
+    padding: 0;
   }
 }
 /*** LARGE DEVICES: LESS ***/
@@ -627,5 +733,22 @@ footer .icon {
   .hold-blog {
     max-width: 1400px;
     margin: auto;
+  }
+  /* SUBPAGE SPECIFIC */
+  .hero-sp {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .hero-sp .hero-text {
+    max-width: 900px;
+    margin: auto;
+  }
+  .hero-products {
+    padding: 0;
+  }
+  .products-sp {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

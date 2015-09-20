@@ -1,0 +1,167 @@
+/*** TYPOGRAPHY: LESS ***/
+
+body {
+	color: @charcoal;
+	font-family: @font-body;
+	font-size: 1em;
+}
+
+h1 {
+	color: @heybluedark;
+	font-family: @font-header;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+h2 {
+	color: @heybluedark;
+	font-family: @font-header;
+	font-size: 3em;
+}
+
+h3 {
+	color: @sweetmintdark;
+	font-size: 2.4em;
+	margin-top: 25px;
+	text-align: center;
+}
+
+h4 {
+	font-size: 1.8em;
+	font-weight: 700;
+}
+
+h5 {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+li:before  {
+	//content: "\2726";
+	content: "\25cf";
+	color: @gopinkdark;
+	padding-right: 10px;
+}
+
+p, li {
+	font-size: 1.5em;
+}
+
+a, a:visited, a:focus {
+	color: @heyblue;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: @heybluelight;
+}
+
+hr {
+	margin: 30px 0px 25px;
+    height: 1px;
+    background: @sweetmintdark;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(@sweetmintlight), to(@sweetmintlight), color-stop(50%, @sweetmintdark));
+}
+
+figcaption {
+	color: @sweetmintdark;
+	font-size: 1.5em;
+	margin-top: 15px;
+}
+
+.nav a {
+    color: @white;
+    font-size: 1.25em;
+}
+
+.nav span {
+	position: absolute;
+	top: 30%;
+	left: 95%;
+	font-size: 1em;
+	color: @heyblue;
+	z-index: 3;
+	visibility: hidden;
+}
+
+nav li:before {
+	content: none;
+}
+
+.page-content .intro p {
+	width: 80%;
+	margin: 0 auto 25px;
+	text-align: center;
+}
+
+.dots {
+	font-size: .6em;
+	padding: 0 6px;
+	color: @gopinkdark;
+}
+
+/*.dots:before {
+	content: "\25cf";
+}*/
+
+.page-highlight {
+  h2 {
+  	margin-bottom: 20px;
+    color: @heybluedark;
+  }
+  .dots {
+  	color: @heyblue;
+  }
+}
+
+.page-content {
+	h2 {
+		&:extend(.page-highlight h2);
+		text-align: center;
+		margin-top: 0;
+	}
+	p, li {
+		text-align: center;
+	}
+	ul {
+		padding-left: 0;
+	}
+	li {
+		list-style: none;
+	}
+}
+
+.page-action {
+	color: @white;
+	h2 {
+		&:extend(.page-content h2);
+		margin-top: 40px;
+		margin-bottom: 0px;
+		color: @white;
+	}
+	p { 
+		text-align: center;
+		margin-bottom: 0;
+	}
+	.post-preview {
+		color: @charcoal;
+	}
+}
+
+.menu {
+	h3 {
+		font-size: 1.5em;
+	}
+}
+
+.text-details p, .text-details li {
+	text-align: left;
+}
+
+footer {
+	color: @heybluedark;
+	text-align: center;
+	.coder {
+		font-size: 1.15em;
+	}
+}

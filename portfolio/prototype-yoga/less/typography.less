@@ -1,0 +1,158 @@
+/*** TYPOGRAPHY: LESS ***/
+
+h1, h2, h3, h4 {
+	color: @River;
+	text-transform: uppercase;
+}
+
+h1, h3 {
+	font-family: @font-header;
+}
+
+h2, h4 {
+	font-weight: 300;
+}
+
+h5 {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 1.6em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+h4 {
+	font-size: 1.15em;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+h3, h5 {
+	margin-top: 0;
+}
+
+p {
+	font-size: 1em;
+}
+
+a, a:visited {
+	color: @GlacialLake;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+a:hover, a:active {
+	color: @River;
+	text-decoration: none;
+}
+
+i {
+	color: @White;
+	font-size: 1em;
+}
+
+body {
+	color: @NightSky;
+	font-family: @font-body;
+}
+
+/* NAV */
+nav {
+	font-family: @font-header;
+	text-transform: uppercase;
+}
+	
+nav a, nav a:visited, .navbar-default .navbar-nav>.active>a, .navbar-default, .navbar-default .navbar-nav>.active>a:visited {
+	color: @White;
+}
+
+nav a:hover, nav a:focus, .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: @Himalaya;
+}
+
+/* MAIN */
+
+hr {
+	clear: both;
+	margin: 10px 0px 40px;
+    height: 1px;
+    background: @Himalaya;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(@GlacialLake), to(@GlacialLake), color-stop(50%, @Himalaya));
+}
+
+.more-link {
+	margin: 15px 0 25px;
+	font-size: 1.3em;
+}
+
+.about-hp {
+	h1, p {
+		color: @White;
+	}
+}
+
+/* Subpage */
+
+.page-intro, .latest h5 {
+	font-weight: 300;
+	color: @Himalaya;
+	text-align: center;
+	padding: 0 2%;
+	margin: -15px auto 5px;
+}
+
+.latest h5 {
+	font-weight: 300;
+	margin-top: 5px;
+	text-transform: uppercase;
+}
+
+.post-details {
+	font-weight: 300;
+	color: @Himalaya;
+	font-style: italic;
+}
+
+.sidebar-sp {
+		text-align: center;
+}
+
+.social-plugins {
+	text-align: center;
+	.fa, p {
+		color: @River;
+		margin-bottom: 0;
+	}
+	.handle {
+		font-size: 1.5em;
+		text-transform: uppercase;
+	}
+}
+
+footer { 
+	color: @White;
+	font-size: 1em;
+	a, a:visited, .fa:visited {
+		color: @White;
+		text-transform: capitalize;
+	}
+	a:hover, a:focus, a:active, .fa:hover, .fa:focus, .fa:active {
+		color: @GlacialLake;	
+	}
+	.fa {
+		font-size: 3em;
+	}
+	p:nth-child(3) {
+		font-size: .85em;
+	}
+}

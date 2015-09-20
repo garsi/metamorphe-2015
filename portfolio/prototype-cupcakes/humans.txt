@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+/* COMPANY */
+	Company: hello, cupcake
+	Site: hello-cupcake.com
+	Location: tacoma, wa
+
+/* TECHNOLOGY */
+    HTML5, CSS, LESS
+    jQuery, Modernizr,
+    Bootstrap,
+    Gulp 
+
+/* THIS SITE */
+	hello, cupcake
+	hello-cupcake.com
